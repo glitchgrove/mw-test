@@ -1,0 +1,4 @@
+This branch tests change-type label detection for the 'revert' commit type.
+PR title to use: revert: test change type label detection
+PR body to use:  fixes #1
+Expected result: revert labels applied via smart label detection.
