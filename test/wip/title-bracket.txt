@@ -1,0 +1,4 @@
+This branch is for testing WIP detection via [WIP] in title.
+PR title to use: [WIP] something not yet ready
+PR body to use:  fixes #1
+Expected result: WIP label applied, check set to failure (blocking).
