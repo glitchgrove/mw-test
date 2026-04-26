@@ -1,0 +1,79 @@
+schemaVersion = 1
+
+[policies.pullRequests.prTitle]
+required = true
+label_if_missing = "pr-issue: invalid-title-format"
+
+[policies.pullRequests.workItem]
+required = true
+label_if_missing = "pr-issue: missing-work-item"
+
+[policies.pullRequests.prSize]
+enabled = true
+fail_on_oversized = false
+excluded_file_patterns = ["*.md", "*.txt", "docs/*"]
+label_prefix = "size: "
+add_comment = true
+
+[policies.pullRequests.wip]
+enforce_wip_blocking = true
+wip_label = "status: work-in-progress"
+wip_title_patterns = ["WIP", "wip:", "[wip]", "draft:", "Draft:"]
+wip_description_patterns = []
+
+[policies.pullRequests.issuePropagation]
+sync_milestone_from_issue = true
+sync_project_from_issue = true
+
+[policies.pullRequests.prState]
+enabled = true
+draft_label    = "status: draft"
+review_label   = "status: in-review"
+approved_label = "status: approved"
+
+[policies.pullRequests.bypassRules.title_convention]
+enabled = true
+users = ["merge-warden-bypass-user"]
+
+[policies.pullRequests.bypassRules.work_items]
+enabled = true
+users = ["merge-warden-bypass-user"]
+
+[change_type_labels]
+enabled = true
+
+[change_type_labels.conventional_commit_mappings]
+feat     = ["type: enhancement", "type: feature"]
+fix      = ["type: bug", "type: bugfix", "type: fix"]
+docs     = ["type: documentation", "type: docs"]
+style    = ["type: style", "type: formatting"]
+refactor = ["type: refactor", "type: refactoring", "type: code quality"]
+perf     = ["type: performance", "type: optimization"]
+test     = ["type: test", "type: tests", "type: testing"]
+chore    = ["type: chore", "type: maintenance", "type: housekeeping"]
+ci       = ["type: ci", "type: continuous integration", "type: build"]
+build    = ["type: build", "type: dependencies"]
+revert   = ["type: revert"]
+
+[change_type_labels.fallback_label_settings]
+name_format       = "type: {change_type}"
+create_if_missing = true
+
+[change_type_labels.fallback_label_settings.color_scheme]
+feat     = "#e4e669"
+fix      = "#e4e669"
+docs     = "#e4e669"
+style    = "#e4e669"
+refactor = "#e4e669"
+perf     = "#e4e669"
+test     = "#e4e669"
+chore    = "#e4e669"
+ci       = "#e4e669"
+build    = "#e4e669"
+revert   = "#e4e669"
+
+[change_type_labels.detection_strategy]
+exact_match       = true
+prefix_match      = true
+description_match = true
+common_prefixes   = ["type:", "kind:", "category:"]
