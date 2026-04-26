@@ -1,0 +1,4 @@
+This branch tests change-type label detection for the 'ci' commit type.
+PR title to use: ci: test change type label detection
+PR body to use:  fixes #1
+Expected result: CI / continuous integration labels applied via smart label detection.
