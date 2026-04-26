@@ -1,0 +1,4 @@
+This branch tests change-type label detection for the 'perf' commit type.
+PR title to use: perf: test change type label detection
+PR body to use:  fixes #1
+Expected result: performance / optimisation labels applied via smart label detection.
