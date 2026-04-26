@@ -1,0 +1,10 @@
+This branch tests milestone and project propagation from a linked issue.
+
+The script pre-created issue #2 with milestone v1.0 and
+added it to the 'merge-warden test board' Projects v2 board.
+
+PR title to use: feat: test issue metadata propagation
+PR body to use:  closes #2
+Expected result:
+  - The PR receives the same milestone as issue #2.
+  - The PR is added to the same Projects v2 project as issue #2.
