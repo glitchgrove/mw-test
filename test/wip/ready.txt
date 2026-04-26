@@ -1,0 +1,4 @@
+This branch is for testing that a PR with no WIP markers is not blocked.
+PR title to use: feat: completed and ready for review
+PR body to use:  fixes #1
+Expected result: no WIP label, check passes.
