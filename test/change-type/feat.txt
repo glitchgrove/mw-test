@@ -1,0 +1,4 @@
+This branch tests change-type label detection for the 'feat' commit type.
+PR title to use: feat: test change type label detection
+PR body to use:  fixes #1
+Expected result: enhancement / feature labels applied via smart label detection.
