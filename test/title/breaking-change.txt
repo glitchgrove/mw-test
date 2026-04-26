@@ -1,0 +1,4 @@
+This branch is for testing a PR with a BREAKING CHANGE marker in the title.
+PR title to use: feat!: remove deprecated configuration option
+PR body to use:  closes #1
+Expected result: valid title, no title label.
