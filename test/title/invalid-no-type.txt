@@ -1,0 +1,4 @@
+This branch is for testing a PR whose title has NO conventional commit type.
+PR title to use: add a thing without a type prefix
+PR body to use:  closes #1
+Expected result: pr-issue: invalid-title-format label applied, check fails.
