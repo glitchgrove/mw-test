@@ -1,0 +1,4 @@
+This branch tests change-type label detection for the 'refactor' commit type.
+PR title to use: refactor: test change type label detection
+PR body to use:  fixes #1
+Expected result: refactoring / code quality labels applied via smart label detection.
