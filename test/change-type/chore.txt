@@ -1,0 +1,4 @@
+This branch tests change-type label detection for the 'chore' commit type.
+PR title to use: chore: test change type label detection
+PR body to use:  fixes #1
+Expected result: maintenance / housekeeping labels applied via smart label detection.
