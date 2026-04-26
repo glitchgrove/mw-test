@@ -1,0 +1,3 @@
+This branch is for testing a PR with a valid fix title that includes a scope.
+PR title to use: fix(auth): correct token expiry calculation
+PR body to use:  fixes #1
