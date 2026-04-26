@@ -1,0 +1,4 @@
+This branch is for testing a PR whose title has a type but no description.
+PR title to use: feat:
+PR body to use:  closes #1
+Expected result: pr-issue: invalid-title-format label applied, check fails.
