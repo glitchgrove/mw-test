@@ -1,0 +1,4 @@
+This branch tests change-type label detection for the 'test' commit type.
+PR title to use: test: test change type label detection
+PR body to use:  fixes #1
+Expected result: test / testing labels applied via smart label detection.
