@@ -1,0 +1,4 @@
+This branch tests change-type label detection for the 'docs' commit type.
+PR title to use: docs: test change type label detection
+PR body to use:  fixes #1
+Expected result: documentation labels applied via smart label detection.
