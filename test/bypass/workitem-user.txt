@@ -1,0 +1,6 @@
+This branch tests the work-item bypass rule.
+Open the PR as the GitHub user listed in bypassRules.work_items.users
+(configured as "merge-warden-bypass-user" in .github/merge-warden.toml).
+PR title to use: chore: bypass work-item check test
+PR body to use:  This PR has no issue reference but the author is bypassed.
+Expected result: work-item validation is skipped; no missing-work-item label.
