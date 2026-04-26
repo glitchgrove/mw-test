@@ -1,0 +1,3 @@
+This branch is for testing the in-review lifecycle label.
+Open the PR as READY FOR REVIEW (not draft).
+Expected result: "status: in-review" label applied.
