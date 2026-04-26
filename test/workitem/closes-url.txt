@@ -1,0 +1,4 @@
+This branch is for testing a PR whose body contains a full GitHub issue URL.
+PR title to use: fix: address issue via full URL reference
+PR body to use:  closes https://github.com/glitchgrove/mw-test/issues/1
+Expected result: work-item validation passes, no missing-work-item label.
