@@ -1,0 +1,4 @@
+This branch tests change-type label detection for the 'build' commit type.
+PR title to use: build: test change type label detection
+PR body to use:  fixes #1
+Expected result: build / dependencies labels applied via smart label detection.
