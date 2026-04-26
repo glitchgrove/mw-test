@@ -1,0 +1,4 @@
+This branch is for testing a PR whose body contains NO work-item reference.
+PR title to use: fix: a fix with no issue reference
+PR body to use:  This PR fixes a bug but mentions no issue.
+Expected result: pr-issue: missing-work-item label applied, check fails.
