@@ -1,0 +1,4 @@
+This branch tests change-type label detection for the 'style' commit type.
+PR title to use: style: test change type label detection
+PR body to use:  fixes #1
+Expected result: style / formatting labels applied via smart label detection.
