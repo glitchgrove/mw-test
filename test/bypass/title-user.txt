@@ -1,0 +1,7 @@
+This branch tests the title-convention bypass rule.
+Open the PR as the GitHub user listed in bypassRules.title_convention.users
+(configured as "merge-warden-bypass-user" in .github/merge-warden.toml).
+PR title to use: Not a conventional commit title at all
+PR body to use:  fixes #1
+Expected result: title validation is skipped for the bypass user; no
+                 invalid-title-format label applied.
